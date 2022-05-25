@@ -43,7 +43,7 @@ class PagesC extends Controller
     }
 
     public function edit($id){
-        $query = DB::table('Notes')->where('id', $id)->first();
+        $notas = DB::table('Notes')->where('id', $id)->first();
         return view('Dat.edit', compact('notas'));
     }
 
